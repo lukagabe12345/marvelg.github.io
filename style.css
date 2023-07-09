@@ -1,0 +1,424 @@
+@import url("//cdn.web-fonts.ge/fonts/dejavu-sans-bold/css/dejavu-sans-bold.min.css");
+
+
+body::-webkit-scrollbar {
+	width: 0.5em;
+  }
+   
+  body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+	background-color: rgb(161, 14, 14);
+	outline: 1px solid rgb(168, 12, 12);
+  }
+
+
+
+
+
+*{
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	
+}
+
+
+video{
+	margin-top: 10px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: none;
+}
+
+
+
+:root{
+	--main-color:#ff2c1f;
+	--text-color:#020307;
+	--bg-color:#fff;
+}
+
+body{
+	background: var(--text-color);
+	color: var(--bg-color); 
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1146%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%2332325d'%3e%3c/rect%3e%3ccircle r='19.905' cx='174.51' cy='79.94' fill='url(%26quot%3b%23SvgjsLinearGradient1147%26quot%3b)'%3e%3c/circle%3e%3ccircle r='21.615' cx='1.68' cy='549.5' fill='url(%26quot%3b%23SvgjsLinearGradient1148%26quot%3b)'%3e%3c/circle%3e%3ccircle r='31.95' cx='692.15' cy='167.13' fill='url(%26quot%3b%23SvgjsLinearGradient1149%26quot%3b)'%3e%3c/circle%3e%3ccircle r='43.635' cx='601.02' cy='317.7' fill='url(%26quot%3b%23SvgjsLinearGradient1150%26quot%3b)'%3e%3c/circle%3e%3ccircle r='39.87' cx='278.42' cy='69.54' fill='url(%26quot%3b%23SvgjsLinearGradient1151%26quot%3b)'%3e%3c/circle%3e%3ccircle r='32.805' cx='762.85' cy='546.86' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='48.645' cx='763.36' cy='23.36' fill='url(%26quot%3b%23SvgjsLinearGradient1152%26quot%3b)'%3e%3c/circle%3e%3ccircle r='34.8' cx='1258' cy='543.31' fill='url(%26quot%3b%23SvgjsLinearGradient1153%26quot%3b)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1146'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='134.7' y1='79.94' x2='214.32' y2='79.94' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1147'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='-41.55' y1='549.5' x2='44.91' y2='549.5' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1148'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='628.25' y1='167.13' x2='756.05' y2='167.13' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1149'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='513.75' y1='317.7' x2='688.29' y2='317.7' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1150'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='198.68' y1='69.54' x2='358.15999999999997' y2='69.54' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1151'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='666.07' y1='23.36' x2='860.6500000000001' y2='23.36' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1152'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1188.4' y1='543.31' x2='1327.6000000000001' y2='543.31' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1153'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+
+}
+
+
+
+
+
+
+
+
+
+
+li{
+	font-family: "DejaVu Sans Bold", sans-serif;
+	color: #0203079a;
+}
+
+
+
+
+
+.text h2{
+ position: relative;
+ text-align: center;
+margin: 90px;
+ color: white;
+ 
+ font-size: 20px;
+
+ animation-name: luka;
+animation-duration: 20s;
+font-family: "DejaVu Sans Bold", sans-serif;
+
+}
+
+.d-flex img{
+	margin: 0 auto;
+	position: relative;
+
+}
+
+
+
+
+.text span{
+	font-family: "DejaVu Sans Bold", sans-serif;
+	position: relative;
+	text-align: center;
+}
+
+ .container .card .borderi{
+	position: absolute;
+	border: 2px solid red;
+	width: 100%;
+	height: 100%;
+	border-bottom: 2px solid red;
+}
+
+
+
+
+@keyframes luka{
+	0%{color: #ff2c1f;}
+	10%{color: #fa1216;}
+	20%{color: #c73636dc;}
+	30%{color: #c00c0c;}
+	40%{color: #ff2c1f;}
+	50%{color: #fa1216;}
+	60%{color: #d84343;}
+	70%{color: #d43131;}
+	8%{color: #bd3730;}
+	90%{color: #fa1216;}
+	100%{color: #bb0000;}
+}
+	
+
+
+
+
+
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+
+}
+
+
+
+.card{
+	width: 184px;
+	height: 273px;
+	border-radius: 10px;
+overflow: hidden;
+	border: 8px solid #fff;
+	position: relative;
+margin: 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+
+}
+
+
+img{
+	border-radius: 10px;
+}
+
+
+
+
+.card-img{
+	width: 184px;
+	height: 274px;
+	object-fit: cover;
+	border-radius: 20px;
+	display: flex;
+	border: 3px solid rgb(228, 228, 228);
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+	margin: 0 auto;
+}
+
+
+.dark-mode {
+	background-color: black;
+	color: #fff;
+  }
+
+  .navbar-brand a{
+	cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hr{
+	
+	position: relative;
+color: rgb(255, 255, 255);
+width: 75%;
+height: 5px;
+margin: 0 auto;
+top: -70px;
+
+border-bottom: 1px solid rgba(255, 0, 0, 0.829);
+	
+}
+
+
+::placeholder{
+	color: rgb(255, 16, 16);
+}
+
+
+
+
+
+
+.card-img:hover{
+	transform: scale(1.1) rotate(-3deg);
+	border-radius: 10px;
+	border: none;
+}
+
+
+.overlay{
+	width: 100% ;
+	height: 100%;
+	top: 0;
+	right: 0;
+	position: absolute;
+	border-radius: 5px;
+background: #1f3d4738;
+backdrop-filter: blur(5px);
+
+
+right: -300px;
+transition: 1.5s;
+}
+
+
+.card:hover .overlay{
+	right: 0;
+}
+
+.overlay h1{
+	position: relative;
+	text-align: center;
+	font-family: "Arial GEO Bold", sans-serif;
+	font-size: 18px;
+}
+
+.overlay .pjsdiv{
+width: 50px;
+}
+
+ .overlay .icon{ 
+  display: flex;
+	top: 70px;
+	left: 60px;
+	position: relative;
+	cursor: pointer;
+opacity: 0.2s;
+}
+
+
+
+
+
+.card h1{
+	font-family: "DejaVu Sans Bold", sans-serif;
+	color: white;
+}
+
+nav{
+	display: flex;
+	
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+@media (max-width:514px) {
+
+body{
+	
+}
+
+	.container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+
+	.swiper img{
+		width: 100%;
+    height: 200px;
+
+	}
+
+}
+
+
+.text .chronology{
+	display: flex;
+	font-family: "DejaVu Sans Bold", sans-serif;
+	justify-content: center;
+	position: relative;
+
+	text-align: center;
+
+}
+
+
+ .hr11{
+	position: relative;
+	color: rgb(255, 255, 255);
+	width: 100%;
+	height: 5px;
+	margin: 0 auto;
+	top: -5px;
+	
+	border-bottom: 2px solid rgba(255, 237, 237, 0.829);
+}
+
+
+.text h6{
+	padding: 25px;
+	position: relative;
+	color: rgb(219, 124, 0);
+	text-align: center;
+	font-size: 20px;
+	font-family: "DejaVu Sans Bold", sans-serif;
+}
+
+
+
+
+
+ ul .chronology li{
+	display: flex;
+	font-family: "DejaVu Sans Bold", sans-serif;
+	justify-content: center;
+	position: absolute;
+	margin: 0 auto;
+	text-align: center;
+	border: 3px solid red;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+
+
+
+
+ h2 .span{
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	
+}
+
+
+
+.img_box img{
+max-width: 100%;
+
+
+
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+  }
+
+  .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+
+
+  .swiper {
+	width: 100%;
+	height: 600px;
+	margin: 10px 0;
+	object-fit: cover;
+	background-size: cover;
+	
+  }
+
+
+.swiper-slide .fa-circle-play{
+	z-index: 2;
+	position: relative;
+	width: 20px;
+}
+ 
